@@ -1,0 +1,52 @@
+#!/usr/bin/env python
+
+guess = 0
+
+while True:
+    print('What has to be broken before you can use it?\n')
+    print('type hint for hint\n')
+    print('type idk for answer')
+    answer = input()
+    guess += 1
+
+    if answer.lower() == "egg":
+        print('correct')
+        print("It took you " + str(guess) + " guesses.")
+        break
+    elif answer == "hint":
+        print('something you eat for breakfast\n')
+    elif answer == "idk":
+        print('the answer is egg\n')
+    elif guess == 5:
+        print("you only had 5 tries")
+        break
+    else:
+        print('try again\n')
+
+
+guess1 = 0
+
+while True:
+    print('What is full of holes but still holds water?')
+    print('type hint for hint\n')
+    print('type idk for answer')
+    answer = input()
+    guess1 += 1
+
+
+    if answer.lower() == "sponge":
+        print("thats right!")
+        break
+    elif answer == "hint":
+        print('you use it in a kitchen')
+        print('try again')
+    elif answer == "idk":
+        print('im not telling you the answer')
+    elif guess == 5:
+        print("you only had 5 tries")
+        break
+    else:
+        print('try again')
+
+
+
