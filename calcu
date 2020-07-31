@@ -1,0 +1,34 @@
+def add(num1,num2):
+
+    return(num1+num2)
+def sub(num1,num2):
+
+    return(num1-num2)
+def mul(num1,num2):
+
+    return(num1*num2)
+def div(num1,num2):
+
+    return(num1/num2)
+print("  menu   ")
+print("1.  +    ")
+print("2.  -    ")
+print("3.  *    ")
+print("4.  /    ")
+
+num1=int(input("Enter first value : "))
+num2=int(input("Enter second value: "))
+
+choice=input("Enter your choices( 1/2/3/4 : ")
+
+if choice == "1":
+    print(num1, "+", num2, "=", add(num1, num2))
+elif choice == "2":
+    print(num1, "-", num2, "=", sub(num1, num2))
+elif choice == "3":
+    print(num1, "*", num2, "=", mul(num1,num2))
+
+elif choice == "4":
+    print(num1, "/", num2, "=", div(num1,num2))
+else:
+    print("wrong choice")
